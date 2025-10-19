@@ -25,7 +25,8 @@ int main(){
     int length=0;
 
     for (int i=0; c[i]!='\0'; i++)
-        length++;
+        if (c[i]!=' ')
+            length++;
 
     printf("Length of the given string is: %d\n",length);
 

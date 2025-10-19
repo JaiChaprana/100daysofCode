@@ -17,8 +17,11 @@ int main() {
     printf("Enter a string: ");
     fgets(c,sizeof(c),stdin);
 
+    printf("Each character in a new line: \n");
+
     for (int i=0;c[i]!='\0';i++) {
-        printf("%c\n",c[i]);
+        if (c[i]!=' ')
+            printf("%c\n",c[i]);
     }
 
     return 0;

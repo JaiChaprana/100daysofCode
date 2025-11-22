@@ -37,7 +37,7 @@ int main() {
 
   printf("Enter number of sub arrays: ");
   scanf("%d", &k);
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i <= n - k; i++) {
     int subSum = 0;
     for (int j = i; j < i+k; j++) {
       subSum += arr[j];

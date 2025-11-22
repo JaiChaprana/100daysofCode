@@ -35,7 +35,7 @@ int main() {
 
     int maxSub[n];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i <= n - k; i++) {
         const int temp = arr[i];
         for (int j = i; j < i+k; j++) {
             if (arr[j] > max) max = arr[j];
@@ -43,7 +43,7 @@ int main() {
         maxSub[i] = temp;
     }
 
-    for (int i = 0; i < n; i++) printf("%d ", maxSub[i]);
+    for (int i = 0; i <= n - k; i++) printf("%d ", maxSub[i]);
 
     return 0;
 }
